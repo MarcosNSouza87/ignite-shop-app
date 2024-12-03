@@ -28,7 +28,7 @@ export function ProductCard({ data, ...rest }: Props) {
 				w='$40'
 				h='$40'
 				bgColor="$gray500"
-				rounded="md"
+				borderRadius='$md'
 				alignItems="center"
 				p='$2'
 				m='$2'

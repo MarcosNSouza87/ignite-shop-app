@@ -22,9 +22,9 @@ export function Input({
 	return (
 		<FormControl isInvalid={invalid} w="$full" mb="$4">
 			<GluestackInput
-				h="$14"
+				h="$10"
 				borderWidth="$1"
-				borderColor="$gray700"
+				borderColor="$gray400"
 				borderRadius="$md"
 				$invalid={{
 					borderWidth: 1,
@@ -39,7 +39,7 @@ export function Input({
 			>
 				<InputField
 					px="$4"
-					bg="$gray700"
+					bg="$gray600"
 					color="$white"
 					fontFamily="$body"
 					placeholderTextColor="$gray300"

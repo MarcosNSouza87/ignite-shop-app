@@ -13,7 +13,7 @@ export function Size({ size, isActive, ...rest }: Props) {
 			w='$10'
 			h='$8'
 			bg="$gray600"
-			rounded="xs"
+			borderRadius="$md"
 			justifyContent="center"
 			alignItems="center"
 			overflow="hidden"
