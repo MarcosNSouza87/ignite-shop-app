@@ -6,7 +6,7 @@ import { Home } from '@screens/Home';
 import { Details } from '@screens/Details';
 
 type HomeRoutes = {
-	homeStack: undefined;
+	products: undefined;
 	details: { productId: string };
 };
 
@@ -21,7 +21,7 @@ export function HomeRoutes() {
 				headerShown: false,
 			}}
 		>
-			<Screen name="homeStack" component={Home} />
+			<Screen name="products" component={Home} />
 			<Screen name="details" component={Details} />
 		</Navigator>
 	);

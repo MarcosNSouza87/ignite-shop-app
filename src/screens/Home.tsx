@@ -13,14 +13,17 @@ export function Home() {
 	const [products, setProducts] = useState<ProductCardProps[]>([]);
 
 	useEffect(() => {
-		const filtered = PRODUCTS.filter(
-			(product) => product.brand === brandSelected,
-		) as ProductCardProps[];
+		const filtered: ProductCardProps[] =
+			brandSelected !== 'All'
+				? (PRODUCTS.filter(
+						(product) => product.brand === brandSelected,
+				  ) as ProductCardProps[])
+				: (PRODUCTS as ProductCardProps[]);
 		setProducts(filtered);
 	}, [brandSelected]);
 
 	return (
-		<VStack flex={1} alignItems='flex-start' justifyContent='flex-start'>
+		<VStack flex={1} alignItems="flex-start" justifyContent="flex-start">
 			<HomeHeader />
 			<Brands onSelect={setBrandSelected} selected={brandSelected} />
 			<Products brand={brandSelected} data={products} />

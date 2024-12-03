@@ -8,11 +8,11 @@ type Props = {
 };
 
 export function ScreenHeader({ title }: Props) {
-	const { goBack } = useNavigation();
+	const { navigate } = useNavigation();
 
 	return (
 		<HStack bg="$gray600" pb="$6" pt="$16" alignItems='center' justifyContent="space-between" px="$6">
-			<TouchableOpacity onPress={goBack}>
+			<TouchableOpacity onPress={() => navigate('products')}>
 				<Icon as={ArrowLeft} color="$green500" size="xl" />
 			</TouchableOpacity>
 

@@ -1,6 +1,7 @@
 import { IData } from "../@types/data";
 
 export const BRANDS : IData[] = [
+  { id: '0', name: 'All', image: require('../assets/brands/all.png') },
   { id: '1', name: 'Nike', image: require('../assets/brands/nike.png') },
   { id: '2', name: 'Adidas', image: require('../assets/brands/adidas.png') },
   { id: '3', name: 'Mizuno', image: require('../assets/brands/mizuno.png') },

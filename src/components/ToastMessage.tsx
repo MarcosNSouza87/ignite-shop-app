@@ -31,8 +31,9 @@ export function ToastMessage({
 			action={action}
 			bgColor={action === 'success' ? '$green500' : '$red500'}
 			mt="$10"
+			p='$10'
 		>
-			<VStack space="xs" w="$full">
+			<VStack space="lg" w="$full">
 				<HStack flex={1}>
 					<ToastTitle color="$white" fontFamily="$heading" flex={1}>
 						{title}
