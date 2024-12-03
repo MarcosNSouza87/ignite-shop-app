@@ -16,7 +16,7 @@ export function ItemCartCard({ data, onRemove }: Props) {
 			w="$full"
 			h='$20'
 			bgColor="$gray500"
-			rounded="md"
+			rounded="$md"
 			alignItems="center"
 			px='$4'
 			mb='$2'
@@ -35,7 +35,7 @@ export function ItemCartCard({ data, onRemove }: Props) {
 				</Heading>
 
 				<Text color="$gray200" fontSize="$sm">
-					{data.quantity} unidades
+					{`${data.quantity} unidade${data.quantity > 1 ? 's' : ''}`}
 				</Text>
 			</VStack>
 

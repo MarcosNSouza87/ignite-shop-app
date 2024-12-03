@@ -58,7 +58,7 @@ export function ItemsCart() {
 				/>
 			)}
 
-			{cart && cart.length > 0 && <Button title="Finalizar compra" mx={8} my={3} />}
+			{cart && cart.length > 0 && <Button title="Finalizar compra" mx='$8' my='$3' />}
 		</VStack>
 	);
 }
