@@ -7,9 +7,10 @@ import { Brands } from '../components/Brands';
 import { Products } from '../components/Products';
 import { HomeHeader } from '../components/HomeHeader';
 import { ProductCardProps } from '../components/ProductCard';
+import { Notification } from '@components/Notification';
 
 export function Home() {
-	const [brandSelected, setBrandSelected] = useState('Nike');
+	const [brandSelected, setBrandSelected] = useState('All');
 	const [products, setProducts] = useState<ProductCardProps[]>([]);
 
 	useEffect(() => {

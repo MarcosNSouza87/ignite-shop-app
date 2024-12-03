@@ -3,10 +3,11 @@ import { Heading, HStack, Icon, Text, VStack, Image } from '@gluestack-ui/themed
 
 import { LogOut } from 'lucide-react-native';
 import userPhotoDefault from "../assets/userPhotoDefault.png";
+import { Platform } from 'react-native';
 
 export function HomeHeader() {
   return (
-    <HStack pt='$16' pb='$6' px='$8' bg="$gray600" alignItems="center">
+    <HStack pt={ Platform.OS === 'android' ? "$12" : '$16'} pb='$6' px='$8' bg="$gray600" alignItems="center">
       <Image
         source={userPhotoDefault}
         size='sm'
@@ -18,11 +19,11 @@ export function HomeHeader() {
 
       <VStack flex={1}>
         <Text color="$gray100" fontSize="$md">
-          Olá,
+          Hello,
         </Text>
 
         <Heading color="$gray100" fontSize="$md" fontFamily="$heading">
-          Rodrigo Gonçalves
+          Marcos N Souza
         </Heading>
       </VStack>
 

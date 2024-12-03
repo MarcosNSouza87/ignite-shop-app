@@ -15,7 +15,6 @@ export function Products({ data, brand }: Props) {
 	const { navigate } = useNavigation();
 
 	function handleGoDetail (itm: any) {
-		console.log('item => ', itm)
 		navigate('details', { productId: itm.id })
 	}
 

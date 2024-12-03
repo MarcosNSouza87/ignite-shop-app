@@ -12,7 +12,7 @@ export function Sizes({ onSelect, selected }: Props) {
 	return (
 		<VStack my="$8">
 			<Heading fontFamily="heading" fontSize="$md" color="$gray200" mb="$3">
-				Tamanhos
+				Sizes
 			</Heading>
 
 			<FlatList

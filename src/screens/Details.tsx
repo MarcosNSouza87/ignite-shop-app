@@ -62,7 +62,6 @@ export function Details() {
 
 			navigate('cart');
 		} catch (error) {
-			console.log(error)
 			toast.show({
 				placement: 'top',
 				render: ({ id }) => (
@@ -81,13 +80,12 @@ export function Details() {
 		const selected = PRODUCTS.filter(
 			(item) => item.id === productId,
 		)[0] as ProductCardProps;
-		console.log(selected);
 		setProduct(selected);
 	}, [productId]);
 
 	return (
 		<VStack flex={1}>
-			<ScreenHeader title="Detalhes do Produto" />
+			<ScreenHeader title="Product Details" />
 
 			<ScrollView>
 				{product.image && (
@@ -115,7 +113,7 @@ export function Details() {
 
 						<VStack alignItems="flex-end">
 							<Text color="$gray200" fontSize="$sm" textAlign="justify" pt="$2">
-								Quantidade
+								{`  Quantity  `}
 							</Text>
 
 							<Input
@@ -134,7 +132,7 @@ export function Details() {
 
 					<Sizes onSelect={setSize} selected={size} />
 
-					<Button title="Adicionar no carrinho" onPress={handleAddProductToCart} />
+					<Button title="Add to Cart" onPress={handleAddProductToCart} />
 				</VStack>
 			</ScrollView>
 		</VStack>

@@ -44,7 +44,7 @@ export function ItemsCart() {
 
 	return (
 		<VStack flex={1}>
-			<HeaderList title="Produtos" counter={cart ? cart.length : 0} />
+			<HeaderList title="Products" counter={cart ? cart.length : 0} />
 			{cart && (
 				<FlatList
 					data={cart}
